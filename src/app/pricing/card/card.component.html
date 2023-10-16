@@ -1,0 +1,22 @@
+<div class="col pricing py-5">
+    <div class="card mb-5 mb-lg-0">
+        <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">{{planDetails.title}}</h5>
+            <h6 class="card-price text-center">{{planDetails.price}}$<span class="period">/month</span></h6>
+            <hr>
+            <ul class="list-unstyled">
+                <li 
+                    *ngFor="let item of planDetails.features" 
+                    [class]="item.textStyle">
+                        <span class="li">
+                            <i [class]="item.icon"></i>
+                        </span>
+                    {{item.name}}
+                </li>
+            </ul>
+            <div class="d-grid">
+                <a href="#" class="btn btn-primary text-uppercase">Button</a>
+            </div>
+        </div>
+    </div>
+</div>

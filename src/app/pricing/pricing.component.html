@@ -1,0 +1,6 @@
+<section class="pricing {{customDisplay}}">
+    <div class="d-flex fs-1 fw-bold text-light justify-content-center">Pricing using Bootstrap</div>
+    <div class="row row-cols-1 row-cols-md-3 mb-3">
+        <app-card *ngFor="let plan of plans" [planDetails]="plan"></app-card>
+    </div>
+</section>
